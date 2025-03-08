@@ -1,0 +1,203 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+h1, h2, h3 {
+    margin: 0 0 10px;
+}
+
+section {
+    padding: 20px;
+    margin: 10px auto;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    width: 80%;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    margin: 10px 0;
+}
+
+a {
+    text-decoration: none;
+    color: #007BFF;
+}
+
+form label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+form input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+}
+
+button {
+    background: #28a745;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background: #218838;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 0px; /* Sesuaikan tinggi logo */
+    width: 55px; /* Sesuaikan lebar logo */
+    margin-right: 10px; /* Jarak antara logo dan teks */
+    object-fit: cover; /* Menjaga gambar tetap proporsional */
+    border-radius: 150%; /* Menghilangkan efek bulat */
+}
+
+.logo span {
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+}
+
+
+/* Navbar Styles */
+nav {
+    background-color: #111;
+    padding: 15px 30px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+nav .logo {
+    display: flex;
+    align-items: center;
+    margin-right: 40px;
+}
+
+nav .logo img {
+    height: 50px;
+    margin-right: 10px;
+}
+
+nav .logo span {
+    font-size: 28px;
+    font-weight: bold;
+    color: #fff;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    margin: 0 20px;
+}
+
+nav a {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #007BFF;
+    color: #fff;
+    transform: translateY(-2px);
+}
+
+/* Dropdown Menu */
+nav .dropdown {
+    position: relative;
+}
+
+nav .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #111;
+    min-width: 160px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+nav .dropdown:hover .dropdown-content {
+    display: block;
+}
+
+nav .dropdown-content a {
+    color: #fff;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-transform: none;
+}
+
+nav .dropdown-content a:hover {
+    background-color: #007BFF;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+        padding-left: 20px;
+    }
+
+    nav li {
+        margin: 15px 0;
+    }
+
+    nav a {
+        padding: 10px 20px;
+    }
+
+    nav .logo span {
+        font-size: 22px;
+    }
+}
+
+
+/* Gambar di bagian Tentang XT Billiard */
+.about-image {
+    width: 50%; /* Gambar akan menyesuaikan dengan lebar kontainer */
+    max-width: 500px; /* Menetapkan lebar maksimal gambar */
+    height: auto; /* Memastikan rasio gambar tetap terjaga */
+    border-radius: 8px; /* Menambahkan sudut melengkung pada gambar */
+    display: block; /* Menampilkan gambar sebagai block-level element */
+    margin: 0 auto; /* Memusatkan gambar di halaman */
+}
